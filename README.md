@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-                git repository is stored in remote contentful branch master
+            //   git repository is stored in remote contentful branch master. //
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

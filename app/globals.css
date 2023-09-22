@@ -55,9 +55,10 @@ button:hover {
   transition: 0.5s;
 }
 
+/* Main Section Style */
+
 .thisClass {
   margin-top: 20vh;
-  margin-bottom: 20vh;
 }
 
 .heading {
@@ -65,15 +66,104 @@ button:hover {
   font-weight: bolder;
 }
 
+/* Card Component Styling */
+
 .card1  {
   background-color: #f8edeb;
-  height: 20rem;
+  height: 100%;
   border-radius: 5px;
 }
 .card1:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
+
+/* Image Component Styling */
+
+.campus {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-col {
+  position: relative;
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.campus-col > img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: #24f8c741;
+}
+
+.layer h3 {
+  position: absolute;
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* Student Card Section Styling*/
+
+.studentCard {
+  background-color: #f8edeb;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+/* Image Card Section Styling */
+
+.imageClass {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../html-app//img/back1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.imageClass h1 {
+  font-size: 58px;
+  font-weight: 800;
+  margin: 15px 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Footer Section Style */
 
 .icons .fab {
   color: #5236f4;

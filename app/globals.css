@@ -1,27 +1,99 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+header {
+  background-image:linear-gradient(#517e86c4, #949fdf1a), url(../html-app/img/banner1.png);
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 25vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.fa-staylinked {
+  font-size: 42px;
+  /* color: #5236f4; */
+  color: #24f8c7;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 10px;
+  position: relative;
+  text-transform: uppercase;
 }
+
+li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #24f8c7;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+li:hover::after {
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: #fff;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #41ead4;
+  border-color: #41ead4;
+  transition: 0.5s;
+}
+
+.thisClass {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.heading {
+  color: #24f8c7;
+  font-weight: bolder;
+}
+
+.card1  {
+  background-color: #f8edeb;
+  height: 20rem;
+  border-radius: 5px;
+}
+.card1:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.icons .fab {
+  color: #5236f4;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.icons .fab:hover{
+  color: #24f8c7;
+  transition: 0.5s;
+}
+
+.fa-heart {
+  color: #24f8c7;
+}
+
+.card2 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #00bbf9;
+}
+
